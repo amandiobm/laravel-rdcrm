@@ -15,6 +15,15 @@ You can install the package via composer:
 composer require thiagovictorino/laravel-rdcrm
 ```
 
+### Configuration
+
+To create configuration file run:
+
+``` bash
+php artisan vendor:publish --provider="Victorino\RdCrm\RdCrmServiceProvider"
+```
+
+
 ## Usage
 
 ``` php
