@@ -1,11 +1,11 @@
-# Very short description of the package
+# Laravel RDSation CRM Package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/thiagovictorino/laravel-rdcrm.svg?style=flat-square)](https://packagist.org/packages/thiagovictorino/laravel-rdcrm)
 [![Build Status](https://img.shields.io/travis/thiagovictorino/laravel-rdcrm/master.svg?style=flat-square)](https://travis-ci.org/thiagovictorino/laravel-rdcrm)
 [![Quality Score](https://img.shields.io/scrutinizer/g/thiagovictorino/laravel-rdcrm.svg?style=flat-square)](https://scrutinizer-ci.com/g/thiagovictorino/laravel-rdcrm)
 [![Total Downloads](https://img.shields.io/packagist/dt/thiagovictorino/laravel-rdcrm.svg?style=flat-square)](https://packagist.org/packages/thiagovictorino/laravel-rdcrm)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+This is a non-official package for Laravel to use RDStation CRM (plugcrm)
 
 ## Installation
 

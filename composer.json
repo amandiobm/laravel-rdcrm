@@ -3,7 +3,10 @@
     "description": "This is a non-official package for Laravel to integrate with RDS-CRM (plugcrm)",
     "keywords": [
         "thiagovictorino",
-        "laravel-rdcrm"
+        "rdcrm",
+        "rd station crm",
+        "rds crm",
+        "rdscrm"
     ],
     "homepage": "https://github.com/thiagovictorino/laravel-rdcrm",
     "license": "MIT",
@@ -15,22 +18,24 @@
             "role": "Developer"
         }
     ],
+    "prefer-stable": true,
+    "minimum-stability": "dev",
     "require": {
         "php": "^7.1",
-        "illuminate/support": "^6.0"
+        "guzzlehttp/guzzle": "~6.0"
     },
     "require-dev": {
-        "orchestra/testbench": "^4.0",
-        "phpunit/phpunit": "^8.0"
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.0"
     },
     "autoload": {
         "psr-4": {
-            "Thiagovictorino\\LaravelRdcrm\\": "src"
+            "Victorino\\RdCrm\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Thiagovictorino\\LaravelRdcrm\\Tests\\": "tests"
+            "Victorino\\RdCrm\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,10 +49,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Thiagovictorino\\LaravelRdcrm\\LaravelRdcrmServiceProvider"
+                "Victorino\\RdCrm\\RdCrmServiceProvider"
             ],
             "aliases": {
-                "LaravelRdcrm": "Thiagovictorino\\LaravelRdcrm\\LaravelRdcrmFacade"
+                "RdCrm": "Victorino\\RdCrm\\RdCrmFacade"
             }
         }
     }

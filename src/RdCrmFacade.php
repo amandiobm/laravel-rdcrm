@@ -1,13 +1,13 @@
 <?php
 
-namespace Thiagovictorino\LaravelRdcrm;
+namespace Victorino\RdCrm;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Thiagovictorino\LaravelRdcrm\Skeleton\SkeletonClass
+ * @see thiagovictorino\RdCrm\Skeleton\SkeletonClass
  */
-class LaravelRdcrmFacade extends Facade
+class RdCrmFacade extends Facade
 {
     /**
      * Get the registered name of the component.

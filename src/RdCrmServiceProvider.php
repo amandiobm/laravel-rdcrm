@@ -1,10 +1,10 @@
 <?php
 
-namespace Thiagovictorino\LaravelRdcrm;
+namespace Victorino\RdCrm;
 
 use Illuminate\Support\ServiceProvider;
 
-class LaravelRdcrmServiceProvider extends ServiceProvider
+class RdCrmServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -21,8 +21,8 @@ class LaravelRdcrmServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('laravel-rdcrm.php'),
-            ], 'config');
+                __DIR__.'/../config/config.php' => config_path('rdcrm.php'),
+            ], 'rdcrm');
 
             // Publishing the views.
             /*$this->publishes([
@@ -50,11 +50,11 @@ class LaravelRdcrmServiceProvider extends ServiceProvider
     public function register()
     {
         // Automatically apply the package configuration
-        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-rdcrm');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'rdcrm');
 
         // Register the main class to use with the facade
         $this->app->singleton('laravel-rdcrm', function () {
-            return new LaravelRdcrm;
+            return new RdCrm;
         });
     }
 }
